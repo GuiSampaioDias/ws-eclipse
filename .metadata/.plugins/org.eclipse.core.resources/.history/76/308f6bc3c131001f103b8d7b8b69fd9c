@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		int y = 38;
+		double x = 97.1;
+		System.out.printf("Olá, meu nome é Guilherme tenho %n anos", y);
+		
+	}
+
+}

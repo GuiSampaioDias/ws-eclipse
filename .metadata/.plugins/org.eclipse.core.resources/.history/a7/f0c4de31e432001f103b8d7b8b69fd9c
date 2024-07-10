@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int y;
+		String x;
+		
+		System.out.print("Digite o seu nome: ");
+		x = sc.next();
+		
+		System.out.println("Quantos anos você tem: ");
+		y = sc.nextInt();
+		
+		System.out.printf("Olá %s%nVocê tem %d anos.%n",x, y);
+		
+		
+		sc.close();
+	}
+
+}

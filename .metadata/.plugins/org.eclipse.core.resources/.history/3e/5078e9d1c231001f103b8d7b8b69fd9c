@@ -1,0 +1,15 @@
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int y = 38;
+		double x = 97.1;
+		System.out.println(y);
+		System.out.printf("Olá, meu nome é Guilherme tenho %.2f%n anos", x);
+		Locale.setDefault(Locale.US);
+		System.out.printf("Olá, meu nome é Guilherme tenho " + y + " anos e peso %.2f%n Kg", x);
+		
+	}
+
+}

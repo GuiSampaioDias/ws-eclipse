@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int anos, meses, dias;
+		int total_dias = sc.nextInt();
+		
+		anos = total_dias / 365;
+		total_dias -= (total_dias / 365 * 365);
+		meses = total_dias / 30;
+		
+		System.out.printf("%d ano(s)%n", anos);
+		System.out.printf("%d mes(es)%n", meses);
+		
+		sc.close();
+	}
+
+}

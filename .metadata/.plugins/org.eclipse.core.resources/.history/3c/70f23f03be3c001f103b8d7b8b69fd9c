@@ -1,0 +1,36 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		String linha = sc.nextLine();
+		String[] valores = linha.split(" ");
+		
+		double a, b, c, d,e, raio_ao_quadrado;
+		double pi = 3.14159;
+		double A = Double.parseDouble(valores[0]);
+		double B = Double.parseDouble(valores[1]);
+		double C = Double.parseDouble(valores[2]);
+		
+		raio_ao_quadrado = Math.pow(C, 2.0);
+		a = A * C /2;
+		b = pi * raio_ao_quadrado;
+		c = (A + B) * C / 2;
+		d = B * B;
+		e = A * B;
+		
+		System.out.printf("TRIANGULO: %.3F%n",a);
+		System.out.printf("CIRCULO: %.3f%n",b);
+		System.out.printf("TRAPEZIO: %.3f%n",c);
+		System.out.printf("QUADRADO: %.3f%n",d);
+		System.out.printf("RETANGULO: %.3f%n",e);
+		
+		sc.close();
+	}
+
+}
