@@ -19,7 +19,7 @@ public class Main {
 		
 		System.out.printf("TOTAL = R$ %.2f%n", salario_final);
 		
-		
+		System.out.println(nome);
 		sc.close();
 	}
 
